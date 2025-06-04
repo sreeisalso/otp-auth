@@ -4,5 +4,6 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Info: Client\""
-	}
+	},
+	"private": false
 }
