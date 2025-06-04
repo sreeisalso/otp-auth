@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Info: Client\""
+		"test": "echo \"Info: Client\"",
+		"publish": "pnpm publish --access public"
 	},
 	"private": false
 }
