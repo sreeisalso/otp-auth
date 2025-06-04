@@ -1,2 +1,6 @@
 packages:
- - 'packages/*'
+  - packages/*
+catalog:
+  vite: ^6
+onlyBuiltDependencies:
+  - esbuild

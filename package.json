@@ -5,11 +5,14 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "pnpm -r test",
-    "publish" : "pnpm -r run publish"
+		"publish": "pnpm -r run publish"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"packageManager": "pnpm@10.10.0",
-	"private": false
+	"packageManager": "pnpm@10.11.1",
+	"private": false,
+	"devDependencies": {
+		"vite": "catalog:"
+	}
 }

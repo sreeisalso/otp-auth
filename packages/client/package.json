@@ -6,5 +6,8 @@
 		"test": "echo \"Info: Client\"",
 		"publish": "pnpm publish --access public"
 	},
-	"private": false
+	"private": false,
+	"devDependencies": {
+		"vite": "catalog:"
+	}
 }
