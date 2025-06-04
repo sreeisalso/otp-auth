@@ -1,0 +1,6 @@
+{
+	"name": "@otp-auth/client",
+	"version": "0.0.54",
+	"license": "MIT",
+	"exports": "./src/index.ts"
+}
