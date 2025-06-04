@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "pnpm -r test",
-		"publish": "pnpm -r run publish"
+		"publish": "pnpm -r run publish",
+		"taze:major": "taze major"
 	},
 	"keywords": [],
 	"author": "",
@@ -13,6 +14,7 @@
 	"packageManager": "pnpm@10.11.1",
 	"private": false,
 	"devDependencies": {
+		"taze": "^19.1.0",
 		"vite": "catalog:"
 	}
 }
