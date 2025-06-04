@@ -6,7 +6,8 @@
 	"scripts": {
 		"test": "pnpm -r test",
 		"publish": "pnpm -r run publish",
-		"taze:major": "taze major"
+		"taze:major": "taze major",
+		"fmt": "prettier . --write"
 	},
 	"keywords": [],
 	"author": "",
@@ -14,6 +15,7 @@
 	"packageManager": "pnpm@10.11.1",
 	"private": false,
 	"devDependencies": {
+		"prettier": "catalog:",
 		"taze": "^19.1.0",
 		"vite": "catalog:"
 	}

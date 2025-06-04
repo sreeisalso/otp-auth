@@ -6,6 +6,9 @@ settings:
 
 catalogs:
   default:
+    prettier:
+      specifier: ^3.5.3
+      version: 3.5.3
     vite:
       specifier: ^6.3.5
       version: 6.3.5
@@ -14,6 +17,9 @@ importers:
 
   .:
     devDependencies:
+      prettier:
+        specifier: 'catalog:'
+        version: 3.5.3
       taze:
         specifier: ^19.1.0
         version: 19.1.0
@@ -378,6 +384,11 @@ packages:
     resolution: {integrity: sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==}
     engines: {node: ^10 || ^12 || >=14}
 
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   quansync@0.2.10:
     resolution: {integrity: sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A==}
 
@@ -692,6 +703,8 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  prettier@3.5.3: {}
 
   quansync@0.2.10: {}
 

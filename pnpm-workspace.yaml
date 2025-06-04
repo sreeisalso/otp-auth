@@ -2,5 +2,6 @@ packages:
   - packages/*
 catalog:
   vite: ^6.3.5
+  prettier: ^3.5.3
 onlyBuiltDependencies:
   - esbuild
