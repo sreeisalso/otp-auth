@@ -7,7 +7,8 @@
 		"test": "pnpm -r test",
 		"publish": "pnpm -r run publish",
 		"taze:major": "taze major",
-		"fmt": "prettier . --write"
+		"fmt": "prettier . --write",
+		"change":"pnpm changeset"
 	},
 	"keywords": [],
 	"author": "",
@@ -15,6 +16,7 @@
 	"packageManager": "pnpm@10.11.1",
 	"private": false,
 	"devDependencies": {
+		"@changesets/cli": "^2.29.4",
 		"prettier": "catalog:",
 		"taze": "^19.1.0",
 		"vite": "catalog:"
