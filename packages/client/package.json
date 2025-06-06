@@ -1,13 +1,20 @@
 {
 	"name": "@otp-auth/client",
-	"version": "0.0.2",
-	"type": "module",
-	"scripts": {
-		"test": "echo \"Info: Client\"",
-		"publish": "pnpm publish --access public"
+	"version": "0.0.53",
+	"devDependencies": {
+		"jsr": "^0.13.4"
 	},
 	"private": false,
-	"devDependencies": {
-		"vite": "catalog:"
-	}
+	"repository": {
+		"url": "git+https://github.com/sreeisalso/otp-auth.git",
+		"directory": "packages/client"
+	},
+	"scripts": {
+		"build": "vite build",
+		"publish:jsr": "pnpm jsr publish",
+		"publish:npm": "npm publish --access public --no-git-checks --provenance",
+		"test": "echo \"Info: Client\"",
+		"version:jsr": "tsx ../../utils/version-jsr.ts"
+	},
+	"type": "module"
 }

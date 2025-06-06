@@ -1,0 +1,45 @@
+name: Publish to NPM @otp-auth/core
+on:
+  push:
+    tags:
+      - "@otp-auth/core@*"
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions:
+  contents: write
+  packages: write
+  id-token: write
+  attestations: write
+
+jobs:
+  publish-otp-auth-core:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+
+      - name: "Setup PNPM"
+        uses: pnpm/action-setup@v4
+
+      - name: "Setup Node"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+          scope: "@otp-auth"
+          registry-url: https://registry.npmjs.org/
+          always-auth: true
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+      - name: "Install PNPM Packages"
+        run: pnpm install --frozen-lockfile
+
+      - name: "Publishing to NPM registry @otp-auth/core"
+        run: pnpm --filter @otp-auth/core publish:npm
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: "${{ github.workspace }}/packages/core"
