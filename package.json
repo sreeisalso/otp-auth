@@ -1,24 +1,28 @@
 {
 	"name": "otp-auth",
-	"version": "0.0.2",
 	"description": "An authentication library, focuses on one time password over all other methods, for simplicity and robustness",
-	"main": "index.js",
-	"scripts": {
-		"test": "pnpm -r test",
-		"publish": "pnpm -r run publish",
-		"taze:major": "taze major",
-		"fmt": "prettier . --write",
-		"change":"pnpm changeset"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"packageManager": "pnpm@10.11.1",
-	"private": false,
+	"author": "Sreekanth Nagareddy <sreeisalso@gmail.com>",
 	"devDependencies": {
 		"@changesets/cli": "^2.29.4",
 		"prettier": "catalog:",
+		"syncpack": "14.0.0-alpha.12",
 		"taze": "^19.1.0",
 		"vite": "catalog:"
-	}
+	},
+	"keywords": [],
+	"license": "ISC",
+	"packageManager": "pnpm@10.11.1",
+	"private": false,
+	"scripts": {
+		"build": "pnpm -r build",
+		"change": "pnpm changeset",
+		"fmt": "prettier . --write && pnpm syncpack format",
+		"publish": "pnpm -r run publish",
+		"taze:major": "taze major",
+		"test": "pnpm -r test"
+	},
+	"type": "module",
+	"workspaces": [
+		"packages/*"
+	]
 }

@@ -1,6 +1,6 @@
 {
-  "name": "@otp-auth/core",
-  "version": "0.0.4",
-  "license": "MIT",
-  "exports": "./mod.ts"
+	"name": "@otp-auth/core",
+	"version": "0.0.4",
+	"license": "MIT",
+	"exports": "./mod.ts",
 }

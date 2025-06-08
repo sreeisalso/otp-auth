@@ -1,13 +1,14 @@
 {
 	"name": "@otp-auth/client",
 	"version": "0.0.4",
-	"type": "module",
-	"scripts": {
-		"test": "echo \"Info: Client\"",
-		"publish": "pnpm publish --access public"
-	},
-	"private": false,
 	"devDependencies": {
 		"vite": "catalog:"
-	}
+	},
+	"private": false,
+	"scripts": {
+		"build": "vite build",
+		"publish": "pnpm publish --access public",
+		"test": "echo \"Info: Client\""
+	},
+	"type": "module"
 }
