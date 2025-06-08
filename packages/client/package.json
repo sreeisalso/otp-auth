@@ -8,6 +8,7 @@
 	"scripts": {
 		"build": "vite build",
 		"publish": "pnpm publish --access public",
+		"publish:jsr": "pnpm dlx jsr publish",
 		"test": "echo \"Info: Client\""
 	},
 	"type": "module"

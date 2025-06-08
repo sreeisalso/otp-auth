@@ -17,7 +17,8 @@
 		"build": "pnpm -r build",
 		"change": "pnpm changeset",
 		"fmt": "prettier . --write && pnpm syncpack format",
-		"publish": "pnpm -r run publish",
+		"publish:jsr": "pnpm -r publish:jsr",
+		"publish:npm": "pnpm -r publish:npm",
 		"taze:major": "taze major",
 		"test": "pnpm -r test"
 	},
