@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.10
+
+### Patch Changes
+
+- Added npm release from github actions
+
 ## 0.0.9
 
 ### Patch Changes
