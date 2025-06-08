@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.6
+
+### Patch Changes
+
+- updated deps
+
 ## 0.0.5
 
 ### Patch Changes
