@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.9
+
+### Patch Changes
+
+- renamed github workflows
+
 ## 0.0.8
 
 ### Patch Changes
