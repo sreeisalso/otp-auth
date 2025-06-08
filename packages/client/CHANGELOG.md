@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.7
+
+### Patch Changes
+
+- fix jsr mod
+
 ## 0.0.6
 
 ### Patch Changes
