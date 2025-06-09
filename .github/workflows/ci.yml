@@ -1,11 +1,12 @@
-name: Publish on NPM
-
+name: Build @otp-auth
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
-  publish-npm:
+  build:
+    name: Building @otp-aut
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout"
@@ -24,7 +25,5 @@ jobs:
       - name: "Install PNPM Packages"
         run: pnpm install --frozen-lockfile
 
-      - name: "Publishing to npm registry"
-        run: pnpm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: "Build Packages"
+        run: pnpm build
