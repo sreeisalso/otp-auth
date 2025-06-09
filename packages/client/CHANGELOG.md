@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.11
+
+### Patch Changes
+
+- workflow update
+
 ## 0.0.10
 
 ### Patch Changes
