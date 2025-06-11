@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.12
+
+### Patch Changes
+
+- pnpm version conflict resolved
+
 ## 0.0.11
 
 ### Patch Changes
