@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.17
+
+### Patch Changes
+
+- added .npmrc from qwik
+
 ## 0.0.16
 
 ### Patch Changes
