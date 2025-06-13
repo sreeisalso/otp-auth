@@ -28,4 +28,4 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: "Publishing to npm registry"
-        run: pnpm publish:jsr --filter @packages/client
+        run: pnpm publish:jsr --filter @otp-auth/client
