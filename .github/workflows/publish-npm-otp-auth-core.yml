@@ -26,6 +26,6 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: "Publishing to npm registry"
-        run: pnpm publish --filter @packages/core
+        run: pnpm publish:npm --filter @packages/core
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
