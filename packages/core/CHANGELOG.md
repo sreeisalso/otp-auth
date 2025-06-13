@@ -1,5 +1,11 @@
 # @otp-auth/core
 
+## 0.0.16
+
+### Patch Changes
+
+- added jsr
+
 ## 0.0.15
 
 ### Patch Changes
