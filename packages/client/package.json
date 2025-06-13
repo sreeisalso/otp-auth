@@ -7,7 +7,7 @@
 	"private": false,
 	"scripts": {
 		"build": "vite build",
-		"publish": "pnpm publish --access public",
+		"publish": "pnpm publish --access public --no-git-checks",
 		"publish:jsr": "pnpm dlx jsr publish",
 		"test": "echo \"Info: Client\""
 	},
