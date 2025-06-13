@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.13
+
+### Patch Changes
+
+- --no-git-checks
+
 ## 0.0.12
 
 ### Patch Changes
