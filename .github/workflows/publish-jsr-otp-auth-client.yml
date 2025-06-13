@@ -1,12 +1,17 @@
-name: Publish on NPM
-
+name: Publish to JSR @otp-auth/client
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
+
+    tags: -'@otp-auth/client@*'
 
 jobs:
-  publish-npm:
+  publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
@@ -23,6 +28,4 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: "Publishing to npm registry"
-        run: pnpm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm dlx jsr publish --filter @packages/client
