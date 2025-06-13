@@ -4,6 +4,7 @@
 	"author": "Sreekanth Nagareddy <sreeisalso@gmail.com>",
 	"devDependencies": {
 		"@changesets/cli": "^2.29.4",
+		"jsr": "^0.13.4",
 		"prettier": "catalog:",
 		"syncpack": "14.0.0-alpha.12",
 		"taze": "^19.1.0",
@@ -11,7 +12,7 @@
 	},
 	"keywords": [],
 	"license": "ISC",
-	"packageManager": "pnpm@10.11.1",
+	"packageManager": "pnpm@10.12.1",
 	"private": false,
 	"scripts": {
 		"build": "pnpm -r build",
