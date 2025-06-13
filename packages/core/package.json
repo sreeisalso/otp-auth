@@ -9,7 +9,7 @@
 	"scripts": {
 		"build": "vite build",
 		"publish:jsr": "pnpm dlx jsr publish",
-		"publish:npm": "pnpm publish --access public --no-git-checks",
+		"publish:npm": "pnpm publish --access public --no-git-checks --provenance",
 		"test": "echo \"Info: Core\""
 	},
 	"type": "module"
