@@ -27,5 +27,5 @@ jobs:
       - name: "Install PNPM Packages"
         run: pnpm install --frozen-lockfile
 
-      - name: "Publishing to npm registry"
+      - name: "Publishing to JSR registry @otp-auth/client"
         run: pnpm --filter @otp-auth/client publish:jsr

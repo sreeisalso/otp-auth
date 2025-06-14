@@ -21,11 +21,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          registry-url: https://registry.npmjs.org
+          scope: "@otp-auth"
 
       - name: "Install PNPM Packages"
         run: pnpm install --frozen-lockfile
 
-      - name: "Publishing to npm registry"
+      - name: "Publishing to NPM registry @otp-auth/core"
         run: pnpm --filter @otp-auth/core publish:npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

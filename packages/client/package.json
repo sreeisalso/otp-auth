@@ -1,11 +1,12 @@
 {
 	"name": "@otp-auth/client",
-	"version": "0.0.18",
+	"version": "0.0.19",
 	"devDependencies": {
 		"jsr": "^0.13.4",
 		"vite": "catalog:"
 	},
 	"private": false,
+	"repository": "sreeisalso/otp-auth.git",
 	"scripts": {
 		"build": "vite build",
 		"publish:jsr": "pnpm dlx jsr publish",
