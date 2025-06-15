@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.21
+
+### Patch Changes
+
+- added permissions
+
 ## 0.0.20
 
 ### Patch Changes

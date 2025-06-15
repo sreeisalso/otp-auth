@@ -7,6 +7,9 @@ on:
 
     tags: -'@otp-auth/client@*'
 
+permissions:
+  id-token: write
+
 jobs:
   publish-otp-auth-client:
     runs-on: ubuntu-latest
