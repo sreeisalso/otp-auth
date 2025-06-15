@@ -7,7 +7,11 @@ on:
 
     tags: -'@otp-auth/core@*'
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 permissions:
+  contents: write
+  packages: write
   id-token: write
   attestations: write
 
@@ -26,16 +30,18 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
+          registry-url: "https://registry.npmjs.org/"
 
       - name: "Install PNPM Packages"
         run: pnpm install --frozen-lockfile
 
       - name: "Publishing to NPM registry @otp-auth/core"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
-          pnpm --filter @otp-auth/core publish:npm
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        uses: changesets/action@v1
+        with:
+          publish: pnpm release
+          version: pnpm changeset version
 
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v2

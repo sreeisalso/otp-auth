@@ -8,6 +8,8 @@ on:
     tags: -'@otp-auth/client@*'
 
 permissions:
+  contents: write
+  packages: write
   id-token: write
   attestations: write
 
@@ -34,7 +36,7 @@ jobs:
 
       - name: "Publishing to NPM registry @otp-auth/client"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm --filter @otp-auth/client publish:npm
 
       - name: Attest Build Provenance
