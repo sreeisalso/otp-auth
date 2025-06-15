@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.26
+
+### Patch Changes
+
+- NODE_AUTH_TOKEN
+
 ## 0.0.25
 
 ### Patch Changes
