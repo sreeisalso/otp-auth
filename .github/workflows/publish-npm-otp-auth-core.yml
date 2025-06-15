@@ -25,7 +25,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://registry.npmjs.org/
           cache: "pnpm"
 
       - name: "Install PNPM Packages"
@@ -35,6 +34,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
           pnpm --filter @otp-auth/core publish:npm
 
       - name: Attest Build Provenance
