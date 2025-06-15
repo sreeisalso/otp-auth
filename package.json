@@ -24,7 +24,7 @@
 		"fmt": "prettier . --write && pnpm syncpack format",
 		"publish:jsr": "pnpm -r publish:jsr",
 		"publish:npm": "pnpm -r publish:npm",
-		"tag": "pnpm change tag",
+		"tag": "pnpm changeset tag",
 		"taze:major": "taze major",
 		"test": "pnpm -r test"
 	},

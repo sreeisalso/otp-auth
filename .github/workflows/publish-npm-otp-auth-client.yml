@@ -33,9 +33,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: "Publishing to NPM registry @otp-auth/client"
-        run: pnpm --filter @otp-auth/client publish:npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter @otp-auth/client publish:npm
 
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v2
