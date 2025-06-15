@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.25
+
+### Patch Changes
+
+- draft
+
 ## 0.0.24
 
 ### Patch Changes
