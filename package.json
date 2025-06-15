@@ -4,10 +4,12 @@
 	"author": "Sreekanth Nagareddy <sreeisalso@gmail.com>",
 	"devDependencies": {
 		"@changesets/cli": "^2.29.4",
+		"@types/node": "^24.0.1",
 		"jsr": "^0.13.4",
 		"prettier": "catalog:",
 		"syncpack": "14.0.0-alpha.12",
 		"taze": "^19.1.0",
+		"tsx": "^4.20.3",
 		"vite": "catalog:"
 	},
 	"keywords": [],
@@ -17,6 +19,7 @@
 	"repository": "sreeisalso/otp-auth.git",
 	"scripts": {
 		"build": "pnpm -r build",
+		"bump:version": "pnpm change version && pnpm -r version:jsr",
 		"change": "pnpm changeset",
 		"fmt": "prettier . --write && pnpm syncpack format",
 		"publish:jsr": "pnpm -r publish:jsr",

@@ -1,6 +1,6 @@
 {
 	"name": "@otp-auth/client",
-	"version": "0.0.19",
+	"version": "0.0.20",
 	"devDependencies": {
 		"jsr": "^0.13.4",
 		"vite": "catalog:"
@@ -11,7 +11,8 @@
 		"build": "vite build",
 		"publish:jsr": "pnpm dlx jsr publish",
 		"publish:npm": "pnpm publish --access public --no-git-checks --provenance",
-		"test": "echo \"Info: Client\""
+		"test": "echo \"Info: Client\"",
+		"version:jsr": "tsx ../../utils/version-jsr.ts"
 	},
 	"type": "module"
 }

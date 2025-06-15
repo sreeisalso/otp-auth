@@ -30,4 +30,4 @@ jobs:
       - name: "Publishing to NPM registry @otp-auth/core"
         run: pnpm --filter @otp-auth/core publish:npm
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

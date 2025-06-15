@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.20
+
+### Patch Changes
+
+- added jsr.json
+
 ## 0.0.19
 
 ### Patch Changes

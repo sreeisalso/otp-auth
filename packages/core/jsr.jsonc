@@ -1,6 +1,0 @@
-{
-	"name": "@otp-auth/core",
-	"version": "0.0.19",
-	"license": "MIT",
-	"exports": "./src/index.ts",
-}
