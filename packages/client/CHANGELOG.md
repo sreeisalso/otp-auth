@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.23
+
+### Patch Changes
+
+- corrected registry url
+
 ## 0.0.22
 
 ### Patch Changes
