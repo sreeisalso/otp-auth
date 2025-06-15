@@ -9,6 +9,7 @@ on:
 
 permissions:
   id-token: write
+  attestations: write
 
 jobs:
   publish-otp-auth-client:
@@ -24,8 +25,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://registry.npmjs.org
+          registry-url: https://registry.npmjs.org:_authToken=$NPM_TOKEN
           scope: "@otp-auth"
+          cache: "pnpm"
 
       - name: "Install PNPM Packages"
         run: pnpm install --frozen-lockfile
@@ -34,3 +36,8 @@ jobs:
         run: pnpm --filter @otp-auth/client publish:npm
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: "${{ github.workspace }}/otp-auth"

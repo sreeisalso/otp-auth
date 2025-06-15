@@ -1,5 +1,11 @@
 # @otp-auth/client
 
+## 0.0.22
+
+### Patch Changes
+
+- added attestation
+
 ## 0.0.21
 
 ### Patch Changes
