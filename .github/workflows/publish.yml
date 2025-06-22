@@ -1,8 +1,9 @@
-name: Publish to NPM @otp-auth/client
+name: Publish Packages
 on:
   push:
     tags:
       - "@otp-auth/client@*"
+      - "@otp-auth/core@*"
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -13,10 +14,11 @@ permissions:
   attestations: write
 
 jobs:
-  publish-otp-auth-client:
+  publish:
+    if: github.repository == 'sreeisalso/otp-auth'
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout"
+      - name: "Checkout Code"
         uses: actions/checkout@v4
 
       - name: "Setup PNPM"
@@ -33,16 +35,26 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-      - name: "Install PNPM Packages"
+      - name: "Install Packages"
         run: pnpm install --frozen-lockfile
 
       - name: "Publishing @otp-auth/client to NPM registry"
         run: pnpm --filter @otp-auth/client publish:npm
+        if: startsWith(github.ref , 'refs/tags/@otp-aut/client')
 
       - name: "Publishing @otp-auth/client to JSR registry"
         run: pnpm --filter @otp-auth/client publish:jsr
+        if: startsWith(github.ref , 'refs/tags/@otp-aut/client')
+
+      - name: "Publishing @otp-auth/core to NPM registry"
+        run: pnpm --filter @otp-auth/core publish:npm
+        if: startsWith(github.ref , 'refs/tags/@otp-aut/core')
+
+      - name: "Publishing @otp-auth/core to JSR registry"
+        run: pnpm --filter @otp-auth/core publish:jsr
+        if: startsWith(github.ref , '/refs/tags/@otp-aut/core')
 
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v2
         with:
-          subject-path: "${{ github.workspace }}/packages/client"
+          subject-path: "${{ github.workspace }}"

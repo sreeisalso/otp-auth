@@ -9,7 +9,7 @@ jobs:
     name: Building @otp-aut
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout"
+      - name: "Checkout Code"
         uses: actions/checkout@v4
 
       - name: "Setup PNPM"
@@ -21,10 +21,10 @@ jobs:
           node-version: 20
           cache: "pnpm"
 
-      - name: "Install PNPM Packages"
+      - name: "Install Packages"
         run: pnpm install --frozen-lockfile
 
-      - name: "Build Packages"
+      - name: "Build"
         run: pnpm build
 
       - name: Github Release From Changeset
