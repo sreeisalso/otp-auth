@@ -1,4 +1,4 @@
-name: Build @otp-auth
+name: Build
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Building @otp-aut
+    name: Building @otp-auth
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout Code"
