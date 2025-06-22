@@ -1,5 +1,11 @@
 # @otp-auth/core
 
+## 0.0.57
+
+### Patch Changes
+
+- workflow
+
 ## 0.0.56
 
 ### Patch Changes

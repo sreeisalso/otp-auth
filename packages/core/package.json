@@ -1,6 +1,6 @@
 {
 	"name": "@otp-auth/core",
-	"version": "0.0.56",
+	"version": "0.0.57",
 	"devDependencies": {
 		"jsr": "^0.13.4"
 	},
