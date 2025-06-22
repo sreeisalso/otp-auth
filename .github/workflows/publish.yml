@@ -42,28 +42,28 @@ jobs:
 
       - name: "Publishing @otp-auth/client to NPM registry"
         run: pnpm --filter @otp-auth/client publish:npm
-        if: startsWith(github.ref , 'refs/tags/@otp-aut/client')
+        if: startsWith(github.ref , 'refs/tags/@otp-auth/client')
 
       - name: "Publishing @otp-auth/client to JSR registry"
         run: pnpm --filter @otp-auth/client publish:jsr
-        if: startsWith(github.ref , 'refs/tags/@otp-aut/client')
+        if: startsWith(github.ref , 'refs/tags/@otp-auth/client')
 
       - name: "Publishing @otp-auth/core to NPM registry"
         run: pnpm --filter @otp-auth/core publish:npm
-        if: startsWith(github.ref , 'refs/tags/@otp-aut/core')
+        if: startsWith(github.ref , 'refs/tags/@otp-auth/core')
 
       - name: "Publishing @otp-auth/core to JSR registry"
         run: pnpm --filter @otp-auth/core publish:jsr
-        if: startsWith(github.ref , '/refs/tags/@otp-aut/core')
+        if: startsWith(github.ref , 'refs/tags/@otp-auth/core')
 
       - name: Attest Build Provenance for @otp-auth/core
         uses: actions/attest-build-provenance@v2
         with:
           subject-path: "${{ github.workspace }}/packages/core"
-        if: startsWith(github.ref , '/refs/tags/@otp-aut/core')
+        if: startsWith(github.ref , 'refs/tags/@otp-auth/core')
 
       - name: Attest Build Provenance for @otp-auth/client
         uses: actions/attest-build-provenance@v2
         with:
           subject-path: "${{ github.workspace }}/packages/client"
-        if: startsWith(github.ref , '/refs/tags/@otp-aut/client')
+        if: startsWith(github.ref , 'refs/tags/@otp-auth/client')
