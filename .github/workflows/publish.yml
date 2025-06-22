@@ -36,7 +36,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: "Install Packages"
-        run: pnpm install --frozen-lockfile
+        run: |
+          echo ${{github.ref}}
+          pnpm install --frozen-lockfile
 
       - name: "Publishing @otp-auth/client to NPM registry"
         run: pnpm --filter @otp-auth/client publish:npm
