@@ -27,7 +27,12 @@ jobs:
       - name: "Build"
         run: pnpm build
 
-      - name: Github Release From Changeset
-        uses: changesets/action@v1
+      # - name: Github Release From Changeset
+      #   uses: changesets/action@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Github Release From Release-it
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm release
