@@ -1,8 +1,8 @@
-name: Publish to NPM @otp-auth/core
+name: Publish to NPM @otp-auth/client
 on:
   push:
     tags:
-      - "@otp-auth/core@*"
+      - "@otp-auth/client@*"
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -13,7 +13,7 @@ permissions:
   attestations: write
 
 jobs:
-  publish-otp-auth-core:
+  publish-otp-auth-client:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout"
@@ -36,10 +36,13 @@ jobs:
       - name: "Install PNPM Packages"
         run: pnpm install --frozen-lockfile
 
-      - name: "Publishing to NPM registry @otp-auth/core"
-        run: pnpm --filter @otp-auth/core publish:npm
+      - name: "Publishing @otp-auth/client to NPM registry"
+        run: pnpm --filter @otp-auth/client publish:npm
+
+      - name: "Publishing @otp-auth/client to JSR registry"
+        run: pnpm --filter @otp-auth/client publish:jsr
 
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v2
         with:
-          subject-path: "${{ github.workspace }}/packages/core"
+          subject-path: "${{ github.workspace }}/packages/client"

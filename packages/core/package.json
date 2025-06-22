@@ -1,6 +1,6 @@
 {
 	"name": "@otp-auth/core",
-	"version": "0.0.54",
+	"version": "0.0.55",
 	"devDependencies": {
 		"jsr": "^0.13.4"
 	},
@@ -14,7 +14,7 @@
 		"publish:jsr": "pnpm jsr publish",
 		"publish:npm": "npm publish --access public --no-git-checks --provenance",
 		"test": "echo \"Info: Core\"",
-		"version:jsr": "tsx ../../utils/version-jsr.ts"
+		"version:jsr": "tsx ../../scripts/version-jsr.ts"
 	},
 	"type": "module"
 }

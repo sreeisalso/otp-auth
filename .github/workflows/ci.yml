@@ -26,3 +26,8 @@ jobs:
 
       - name: "Build Packages"
         run: pnpm build
+
+      - name: Github Release From Changeset
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -3,7 +3,7 @@
 	"description": "An authentication library, focuses on one time password over all other methods, for simplicity and robustness",
 	"author": "Sreekanth Nagareddy <sreeisalso@gmail.com>",
 	"devDependencies": {
-		"@changesets/cli": "^2.29.4",
+		"@changesets/cli": "^2.29.5",
 		"@types/node": "^24.0.3",
 		"jsr": "^0.13.4",
 		"prettier": "^3.5.3",
