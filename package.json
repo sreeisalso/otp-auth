@@ -7,7 +7,8 @@
 		"@types/node": "^24.0.3",
 		"jsr": "^0.13.4",
 		"prettier": "^3.5.3",
-		"syncpack": "14.0.0-alpha.14",
+		"release-it": "^19.0.3",
+		"syncpack": "14.0.0-alpha.15",
 		"taze": "^19.1.0",
 		"tsx": "^4.20.3",
 		"vite": "^6.3.5"
@@ -28,6 +29,7 @@
 		"publish:jsr": "pnpm -r publish:jsr",
 		"publish:npm": "pnpm -r publish:npm",
 		"push": "git push --follow-tags",
+		"release": "release-it",
 		"tag": "pnpm changeset tag",
 		"taze:major": "taze major",
 		"test": "pnpm -r test"
