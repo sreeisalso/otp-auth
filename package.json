@@ -6,8 +6,7 @@
 		"@changesets/cli": "^2.29.5",
 		"@types/node": "^24.0.3",
 		"jsr": "^0.13.4",
-		"prettier": "^3.5.3",
-		"release-it": "^19.0.3",
+		"prettier": "^3.6.0",
 		"syncpack": "14.0.0-alpha.15",
 		"taze": "^19.1.0",
 		"tsx": "^4.20.3",
@@ -15,7 +14,7 @@
 	},
 	"keywords": [],
 	"license": "ISC",
-	"packageManager": "pnpm@10.12.1",
+	"packageManager": "pnpm@10.12.2",
 	"private": false,
 	"repository": {
 		"url": "git+https://github.com/sreeisalso/otp-auth.git"
@@ -29,7 +28,6 @@
 		"publish:jsr": "pnpm -r publish:jsr",
 		"publish:npm": "pnpm -r publish:npm",
 		"push": "git push --follow-tags",
-		"release": "release-it",
 		"tag": "pnpm changeset tag",
 		"taze:major": "taze major",
 		"test": "pnpm -r test"
