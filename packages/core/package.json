@@ -1,6 +1,6 @@
 {
 	"name": "@otp-auth/core",
-	"version": "0.0.63",
+	"version": "0.0.64",
 	"devDependencies": {
 		"jsr": "^0.13.4"
 	},
@@ -10,11 +10,12 @@
 		"directory": "packages/core"
 	},
 	"scripts": {
-		"build": "vite build",
+		"build": "tsdown",
 		"publish:jsr": "pnpm jsr publish",
 		"publish:npm": "npm publish --access public --no-git-checks --provenance",
 		"test": "echo \"Info: Core\"",
-		"version:jsr": "tsx ../../scripts/version-jsr.ts"
+		"version:jsr": "tsx ../../scripts/version-jsr.ts",
+		"watch": "tsdown --watch"
 	},
 	"type": "module"
 }

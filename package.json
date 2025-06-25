@@ -4,13 +4,14 @@
 	"author": "Sreekanth Nagareddy <sreeisalso@gmail.com>",
 	"devDependencies": {
 		"@changesets/cli": "^2.29.5",
-		"@types/node": "^24.0.3",
+		"@types/node": "^24.0.4",
 		"jsr": "^0.13.4",
-		"prettier": "^3.6.0",
-		"syncpack": "14.0.0-alpha.15",
+		"prettier": "^3.6.1",
+		"syncpack": "14.0.0-alpha.16",
 		"taze": "^19.1.0",
+		"tsdown": "^0.12.9",
 		"tsx": "^4.20.3",
-		"vite": "^6.3.5"
+		"typescript": "^5.8.3"
 	},
 	"keywords": [],
 	"license": "ISC",
@@ -30,7 +31,8 @@
 		"push": "git push --follow-tags",
 		"tag": "pnpm changeset tag",
 		"taze:major": "taze major",
-		"test": "pnpm -r test"
+		"test": "pnpm -r test",
+		"watch": "pnpm -r watch"
 	},
 	"type": "module",
 	"workspaces": [
