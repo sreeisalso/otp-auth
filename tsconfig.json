@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "ES2022",
+		"moduleResolution": "Bundler",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"outDir": "./dist",
+		"rootDir": "./",
+		"baseUrl": "./",
+		"paths": {
+			"@otp-auth/core": ["./packages/core/src"],
+			"@otp-auth/client": ["./packages/client/src"]
+		}
+	},
+	"exclude": ["node_modules", "dist"]
+}

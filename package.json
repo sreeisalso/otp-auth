@@ -5,7 +5,7 @@
 	"devDependencies": {
 		"@changesets/cli": "^2.29.5",
 		"@types/node": "^24.0.10",
-		"jsr": "^0.13.4",
+		"jsr": "^0.13.5",
 		"prettier": "^3.6.2",
 		"syncpack": "14.0.0-alpha.17",
 		"taze": "^19.1.0",
