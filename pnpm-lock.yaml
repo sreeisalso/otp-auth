@@ -37,6 +37,10 @@ importers:
         version: 5.8.3
 
   packages/client:
+    dependencies:
+      zod:
+        specifier: ^3.25.74
+        version: 3.25.74
     devDependencies:
       '@otp-auth/core':
         specifier: workspace:*

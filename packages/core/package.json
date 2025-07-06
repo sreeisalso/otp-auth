@@ -1,11 +1,14 @@
 {
 	"name": "@otp-auth/core",
-	"version": "0.0.66",
+	"version": "0.0.68",
 	"devDependencies": {
 		"@libsql/client": "^0.15.9",
 		"drizzle-kit": "^0.31.4",
 		"drizzle-orm": "^0.44.2",
 		"jsr": "^0.13.5",
+		"zod": "^3.25.74"
+	},
+	"peerDependencies": {
 		"zod": "^3.25.74"
 	},
 	"private": false,
@@ -15,7 +18,7 @@
 	},
 	"scripts": {
 		"build": "tsdown",
-		"publish:jsr": "pnpm jsr publish",
+		"publish:jsr": "pnpm jsr publish --allow-slow-types",
 		"publish:npm": "npm publish --access public --no-git-checks --provenance",
 		"test": "echo \"Info: Core\"",
 		"version:jsr": "tsx ../../scripts/version-jsr.ts",

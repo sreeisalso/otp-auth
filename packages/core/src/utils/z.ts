@@ -1,5 +1,5 @@
 // Zod schemas for request and response validation.
-import { z } from "zod";
+import { z } from "zod/v4";
 
 // Schema for mobile number input.
 export const MobileNumberSchema = z
