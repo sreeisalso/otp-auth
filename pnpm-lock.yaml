@@ -64,8 +64,8 @@ importers:
         specifier: ^0.13.5
         version: 0.13.5
       zod:
-        specifier: ^3.25.74
-        version: 3.25.74
+        specifier: ^3.25.75
+        version: 3.25.75
 
 packages:
 
@@ -1365,6 +1365,9 @@ packages:
   zod@3.25.74:
     resolution: {integrity: sha512-J8poo92VuhKjNknViHRAIuuN6li/EwFbAC8OedzI8uxpEPGiXHGQu9wemIAioIpqgfB4SySaJhdk0mH5Y4ICBg==}
 
+  zod@3.25.75:
+    resolution: {integrity: sha512-OhpzAmVzabPOL6C3A3gpAifqr9MqihV/Msx3gor2b2kviCgcb+HM9SEOpMWwwNp9MRunWnhtAKUoo0AHhjyPPg==}
+
 snapshots:
 
   '@antfu/ni@24.4.0':
@@ -2488,3 +2491,5 @@ snapshots:
   yaml@2.8.0: {}
 
   zod@3.25.74: {}
+
+  zod@3.25.75: {}
