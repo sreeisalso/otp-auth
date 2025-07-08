@@ -1,15 +1,15 @@
 {
 	"name": "@otp-auth/core",
-	"version": "0.0.69",
+	"version": "0.0.70",
 	"devDependencies": {
 		"@libsql/client": "^0.15.9",
 		"drizzle-kit": "^0.31.4",
 		"drizzle-orm": "^0.44.2",
 		"jsr": "^0.13.5",
-		"zod": "^3.25.75"
+		"zod": "^3.25.76"
 	},
 	"peerDependencies": {
-		"zod": "^3.25.75"
+		"zod": "^3.25.76"
 	},
 	"private": false,
 	"repository": {

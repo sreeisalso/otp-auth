@@ -1,5 +1,13 @@
 # @otp-auth/client
 
+## 0.0.70
+
+### Patch Changes
+
+- Added deps command
+- Updated dependencies
+  - @otp-auth/core@0.0.70
+
 ## 0.0.69
 
 ### Patch Changes
