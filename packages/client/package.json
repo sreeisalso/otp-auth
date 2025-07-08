@@ -1,6 +1,6 @@
 {
 	"name": "@otp-auth/client",
-	"version": "0.0.68",
+	"version": "0.0.69",
 	"devDependencies": {
 		"@otp-auth/core": "workspace:*",
 		"jsr": "^0.13.5"

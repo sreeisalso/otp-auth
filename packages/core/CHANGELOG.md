@@ -1,5 +1,11 @@
 # @otp-auth/core
 
+## 0.0.69
+
+### Patch Changes
+
+- Dependabot update
+
 ## 0.0.68
 
 ### Patch Changes

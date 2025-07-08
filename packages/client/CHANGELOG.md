@@ -1,5 +1,13 @@
 # @otp-auth/client
 
+## 0.0.69
+
+### Patch Changes
+
+- Dependabot update
+- Updated dependencies
+  - @otp-auth/core@0.0.69
+
 ## 0.0.68
 
 ### Patch Changes
