@@ -1,5 +1,14 @@
 # @otp-auth/client
 
+## 0.0.71
+
+### Patch Changes
+
+- Draft
+
+- Updated dependencies []:
+  - @otp-auth/core@0.0.71
+
 ## 0.0.70
 
 ### Patch Changes

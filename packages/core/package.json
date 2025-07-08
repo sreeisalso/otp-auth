@@ -1,6 +1,6 @@
 {
 	"name": "@otp-auth/core",
-	"version": "0.0.70",
+	"version": "0.0.71",
 	"devDependencies": {
 		"@libsql/client": "^0.15.9",
 		"drizzle-kit": "^0.31.4",
