@@ -4,11 +4,11 @@
 	"devDependencies": {
 		"@otp-auth/core": "workspace:*",
 		"jsr": "^0.13.5",
-		"zod": "^3.25.76"
+		"zod": "^4.0.5"
 	},
 	"peerDependencies": {
 		"@otp-auth/core": "0.0.71",
-		"zod": "^3.25.76"
+		"zod": "^4.0.5"
 	},
 	"private": false,
 	"repository": {
