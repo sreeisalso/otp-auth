@@ -6,7 +6,7 @@
 		"@changesets/cli": "^2.29.5",
 		"@changesets/get-github-info": "^0.6.0",
 		"@changesets/types": "^6.1.0",
-		"@types/node": "^24.0.13",
+		"@types/node": "^24.0.14",
 		"dotenv": "^17.2.0",
 		"jsr": "^0.13.5",
 		"prettier": "^3.6.2",
@@ -25,7 +25,7 @@
 	},
 	"scripts": {
 		"build": "pnpm -r build",
-		"build:changelog-formatter": "tsc .changeset/changelog-github-custom.ts && mv .changeset/changelog-github-custom.js .changeset/changelog-github-custom.cjs",
+		"build:changelog-formatter": "tsc .changeset/changelog-github-custom.ts && prettier .changeset/changelog-github-custom.js --write  && mv .changeset/changelog-github-custom.js .changeset/changelog-github-custom.cjs",
 		"bump:version": "pnpm change version && pnpm -r version:jsr",
 		"change": "pnpm changeset",
 		"deps": "pnpm upgrade -i -r --latest && syncpack fix && pnpm dedupe",

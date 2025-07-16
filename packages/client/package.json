@@ -1,13 +1,13 @@
 {
 	"name": "@otp-auth/client",
-	"version": "0.0.71",
+	"version": "0.0.72",
 	"devDependencies": {
 		"@otp-auth/core": "workspace:*",
 		"jsr": "^0.13.5",
 		"zod": "^4.0.5"
 	},
 	"peerDependencies": {
-		"@otp-auth/core": "0.0.71",
+		"@otp-auth/core": "0.0.72",
 		"zod": "^4.0.5"
 	},
 	"private": false,

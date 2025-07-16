@@ -1,5 +1,11 @@
 # @otp-auth/core
 
+## 0.0.72
+
+### Patch Changes
+
+- updated deps
+
 ## 0.0.71
 
 ### Patch Changes

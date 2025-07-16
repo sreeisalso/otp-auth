@@ -1,10 +1,10 @@
 {
 	"name": "@otp-auth/core",
-	"version": "0.0.71",
+	"version": "0.0.72",
 	"devDependencies": {
-		"@libsql/client": "^0.15.9",
+		"@libsql/client": "^0.15.10",
 		"drizzle-kit": "^0.31.4",
-		"drizzle-orm": "^0.44.2",
+		"drizzle-orm": "^0.44.3",
 		"jsr": "^0.13.5",
 		"zod": "^4.0.5"
 	},
