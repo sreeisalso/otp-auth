@@ -54,8 +54,8 @@ importers:
         specifier: ^0.13.5
         version: 0.13.5
       zod:
-        specifier: ^4.0.5
-        version: 4.0.5
+        specifier: ^4.0.10
+        version: 4.0.10
 
   packages/core:
     devDependencies:
@@ -72,8 +72,8 @@ importers:
         specifier: ^0.13.5
         version: 0.13.5
       zod:
-        specifier: ^4.0.5
-        version: 4.0.5
+        specifier: ^4.0.10
+        version: 4.0.10
 
 packages:
 
@@ -1398,8 +1398,8 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
-  zod@4.0.5:
-    resolution: {integrity: sha512-/5UuuRPStvHXu7RS+gmvRf4NXrNxpSllGwDnCBcJZtQsKrviYXm54yDGV2KYNLT5kq0lHGcl7lqWJLgSaG+tgA==}
+  zod@4.0.10:
+    resolution: {integrity: sha512-3vB+UU3/VmLL2lvwcY/4RV2i9z/YU0DTV/tDuYjrwmx5WeJ7hwy+rGEEx8glHp6Yxw7ibRbKSaIFBgReRPe5KA==}
 
 snapshots:
 
@@ -2547,4 +2547,4 @@ snapshots:
 
   yaml@2.8.0: {}
 
-  zod@4.0.5: {}
+  zod@4.0.10: {}
