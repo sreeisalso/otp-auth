@@ -6,7 +6,7 @@
 		"@changesets/cli": "^2.29.5",
 		"@changesets/get-github-info": "^0.6.0",
 		"@changesets/types": "^6.1.0",
-		"@types/node": "^24.1.0",
+		"@types/node": "^24.2.1",
 		"dotenv": "^17.2.1",
 		"jsr": "^0.13.5",
 		"prettier": "^3.6.2",
