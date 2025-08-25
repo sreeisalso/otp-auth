@@ -6,10 +6,10 @@
 		"drizzle-kit": "^0.31.4",
 		"drizzle-orm": "^0.44.4",
 		"jsr": "^0.13.5",
-		"zod": "^4.0.14"
+		"zod": "^4.1.1"
 	},
 	"peerDependencies": {
-		"zod": "^4.0.14"
+		"zod": "^4.1.1"
 	},
 	"private": false,
 	"repository": {
