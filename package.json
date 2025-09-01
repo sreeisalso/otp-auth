@@ -13,7 +13,7 @@
 		"syncpack": "14.0.0-alpha.19",
 		"taze": "^19.1.0",
 		"tsdown": "^0.14.2",
-		"tsx": "^4.20.3",
+		"tsx": "^4.20.5",
 		"typescript": "^5.9.2"
 	},
 	"keywords": [],
