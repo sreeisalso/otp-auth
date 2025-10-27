@@ -4,7 +4,7 @@
 	"devDependencies": {
 		"@libsql/client": "^0.15.14",
 		"drizzle-kit": "^0.31.4",
-		"drizzle-orm": "^0.44.4",
+		"drizzle-orm": "^0.44.7",
 		"jsr": "^0.13.5",
 		"zod": "^4.1.5"
 	},
